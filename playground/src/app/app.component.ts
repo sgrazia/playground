@@ -1,4 +1,4 @@
-import { Component, TemplateRef, ViewChild } from '@angular/core';
+import { Component, TemplateRef, ViewChild, ViewContainerRef } from '@angular/core';
 import { DialogCloseResult, DialogRef, DialogService } from '@progress/kendo-angular-dialog';
 import { DialogFullComponent } from './dialog-full/dialog-full.component';
 import { DialogTitlebarComponent } from './dialog-titlebar/dialog-titlebar.component';
@@ -17,6 +17,8 @@ export class AppComponent
   @ViewChild('kendoDialogTitlebar', { read: TemplateRef }) kendoDialogTitlebar:TemplateRef<any>;
   @ViewChild('kendoDialogContent', { read: TemplateRef }) kendoDialogContent:TemplateRef<any>;
   @ViewChild('kendoDialogActionbuttons', { read: TemplateRef }) kendoDialogActionbuttons:TemplateRef<any>;
+
+  @ViewChild('dialogInsertionPoint', { read: ViewContainerRef }) dialogInsertionPointPOINT: ViewContainerRef;
  
   constructor (private dialogService: DialogService)
   { }
@@ -33,6 +35,7 @@ export class AppComponent
     console.log(' app.component  -  showDialogContent()');
 
       const dialog: DialogRef = this.dialogService.open({
+        //appendTo: this.dialogInsertionPointPOINT,
           //title: "Please confirm",
           // content: AnstellungListComponent,
           // actionsLayout: 'normal',
@@ -45,7 +48,7 @@ export class AppComponent
           // ],
           width: '60%',
           height: '50%',
-          minWidth: 250
+          minWidth: 180
       });
       
       dialog.result.subscribe((result) => {

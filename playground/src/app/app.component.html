@@ -1,49 +1,56 @@
-<div class='d-inline-flex flex-column p-1'>
-    <div kendoDialogContainer>app.component</div>
-    <button kendoButton (click)='showDialogFull()' [primary]="true">DialogFull</button>
-    <button kendoButton (click)='showDialogContent()' [primary]="true">DialogContent</button>
-    <button kendoButton (click)='showDialogService()' [primary]="true">DialogService</button>
-</div>
 
-
-<ng-template #kendoDialogTitlebar>
-    <kendo-dialog-titlebar>
-        <h2>kendo-dialog-titlebar (DialogTitlebarComponent-Template)</h2>
-    </kendo-dialog-titlebar>
-</ng-template>
-
-<ng-template #kendoDialogContent>
-    <div>
-        DialogContentComponent-Template
-        <p>Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
-            Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
-            Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
-            Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
-            Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
-            Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
-            Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
-            Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
-            Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
-            Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
-            Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
-            Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
-            Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
-            Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
-            Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
-            Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
-            Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
-            Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
-            Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
-        </p>
+<div>
+    <div class='d-inline-flex flex-column p-1'>
+        <div >app.component</div>
+        <button kendoButton (click)='showDialogFull()' [primary]="true">DialogFull</button>
+        <button kendoButton (click)='showDialogContent()' [primary]="true">DialogContent</button>
+        <button kendoButton (click)='showDialogService()' [primary]="true">DialogService</button>
     </div>
 
-<ng-template #kendoDialogActionbuttons>
-    <kendo-dialog-actions>
-        DialogActionbuttonsComponent-Template
-        <button kendoButton [primary]="false">Abbrechen</button>
-        <button kendoButton [primary]="true">Ok</button>
-    </kendo-dialog-actions>
-    
-</ng-template>
+    <div kendoDialogContainer ></div>
+
+    <ng-template #kendoDialogTitlebar>
+        <kendo-dialog-titlebar>
+            <h2>kendo-dialog-titlebar (DialogTitlebarComponent-Template)</h2>
+        </kendo-dialog-titlebar>
+    </ng-template>
+
+    <ng-template #kendoDialogContent>
+        <div>
+            DialogContentComponent-Template
+            <p>Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
+                Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
+                Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
+                Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
+                Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
+                Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
+                Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
+                Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
+                Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
+                Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
+                Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
+                Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
+                Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
+                Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
+                Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
+                Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
+                Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
+                Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
+                Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. Dies ist der Inhalt des Dialogs. 
+            </p>
+        </div>
+    </ng-template>
+
+    <ng-template #kendoDialogActionbuttons>
+        <kendo-dialog-actions>
+            DialogActionbuttonsComponent-Template
+            <button kendoButton [primary]="false">Abbrechen</button>
+            <button kendoButton [primary]="true">Ok</button>
+        </kendo-dialog-actions>
+    </ng-template>
+
+
+</div>
 
 <!-- <router-outlet></router-outlet> -->
+
